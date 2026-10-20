@@ -16,8 +16,7 @@ Hittills har du jobbat på en enda gren och bara gått framåt. I verkligheten j
 2. **Klona din fork:** *Code → HTTPS → kopiera adressen*. I terminalen (Ctrl+ö i VS Code): `git clone <adressen>`. Öppna den nya mappen i VS Code och starta *Live Server*.
 3. **Gör uppgiften.** Spara och kontrollera i webbläsaren och Console (F12) efter varje steg. Gör en commit efter varje avslutat steg: `git add .` och `git commit -m "Beskriv vad du gjorde"`.
 4. **Skicka upp** när du är klar: `git push`.
-5. **Fortsätt i `mitt-projekt`** med dagens projektsteg (längre ned).
-6. **Lämna in i Microsoft Forms.**
+5. **Lämna in i Microsoft Forms.**
 
 Den här dagen jobbar du med grenar. Du pushar fler grenar än `main`, och du öppnar en pull request. Stegen nedan visar exakt hur.
 
@@ -65,38 +64,6 @@ Skapa en gren `info-uppdatering`, ändra något i `kafe-info/`, committa och kö
 
 Läs om `git stash` (lägg undan ändringar tillfälligt) och `git cherry-pick` (plocka en enskild commit till en annan gren). Prova båda i en testgren och förklara när du skulle behöva dem.
 
-## AI-spåret (nivå 2: Specificera och jämför)
-
-**Konflikten, först själv** (cirka 20 minuter, efter att du gjort din egen lösning)
-
-Du beskriver exakt vad koden ska göra och skriver testerna. AI föreslår kod, du kör testerna, jämför och förstår. Git-kommandon som AI föreslår kan radera arbete. Du ska förstå dem innan du kör dem.
-
-Regler: egen lösning först, du ska kunna förklara varje rad, och du loggar i `docs/ai-logg.md` i `mitt-projekt` under rubriken *Modul 5*. Reglerna står i `AI-REGLER-MODUL5.md`.
-
-1. Skapa en konflikt och lös den själv i VS Code enligt övningen.
-2. Skapa en ny konflikt. Be AI förklara vad konfliktmarkörerna betyder.
-3. Be AI föreslå en lösning och jämför med din.
-4. Kör aldrig ett git-kommando du inte kan förklara. Fråga AI vad det gör först.
-5. Kontrollera resultatet med git log --graph --oneline.
-
-Prompt att utgå från:
-
-```
-Jag har en git-merge-konflikt i den här filen:
-[klistra in filen med <<<<<<< markörer]
-Förklara vad varje del betyder. Föreslå en lösning
-men kör inget. Förklara också vilka kommandon
-jag skulle köra efteråt och vad de gör.
-```
-
-**Kontrollera med:**
-
-- git status och git log --graph --oneline.
-- Öppna filen och leta efter kvarglömda markörer.
-- Kan du förklara varje kommando AI nämnde?
-
-**I ditt projekt:** Arbeta i en feature-branch i mitt-projekt, öppna en pull request till din egen main och lös en konflikt. Dokumentera i docs/git-logg.md.
-
 ## Kontrollista: så vet du att du är klar
 
 - [ ] `docs/git-logg.md` är ifylld med graf-utskrifter, konfliktfilen, förklaringar med egna ord och PR-länk.
@@ -106,7 +73,6 @@ jag skulle köra efteråt och vad de gör.
 - [ ] Du har en `.gitignore` som döljer `.env`, `*.log` och `node_modules/`.
 - [ ] Din pull request är öppnad och mergad på ditt eget repo (inte på Lexicon-RC).
 - [ ] Du kan förklara skillnaden mellan `restore`, `revert` och `reset`.
-- [ ] Du har gjort AI-uppgiften och skrivit en post i `docs/ai-logg.md` i `mitt-projekt`.
 
 ## Tips om du fastnar
 
@@ -118,20 +84,6 @@ jag skulle köra efteråt och vad de gör.
 - Windows-fråga: får du "LF will be replaced by CRLF"? Det är en varning, inte ett fel. Ignorera den.
 - Du pushade till fel gren? Kör `git branch` och `git log --oneline --graph --all` och kolla innan du gör något drastiskt.
 
-## Ditt projekt: Arbeta i en gren i ditt projekt och lös en konflikt
-
-Efter övningen jobbar du vidare i `mitt-projekt`, samma repo som i modul 4. Övningen här är träningsbanan, projektet är det som växer. Dagens steg står också i `PROJEKTSTEG-MODUL5.md` (som du kopierar till ditt projekt dag 1), under **Dag 9**.
-
-1. Se till att `main` i ditt projekt fungerar och är pushad. `git status` ska vara rent.
-2. Skapa en gren `feature/ny-funktion` (välj ett eget namn som beskriver vad den gör). Gör minst två commits där.
-3. Skapa en medveten, ofarlig konflikt i `docs/git-logg.md` i projektet: ändra samma rad på `main` och på grenen. Slå ihop och lös den.
-4. Pusha grenen och öppna en pull request till `main` på ditt eget repo (kontrollera *base repository*). Mergea den.
-5. Lägg till `.gitignore` om du saknar en (`.env`, `*.log`, `node_modules/`).
-6. Dokumentera i `docs/git-logg.md` i projektet: grafen, konflikten och hur du löste den.
-7. Commit och push.
-
-**Klart när:** Projektet har en mergad pull request, en löst konflikt, en `.gitignore` och en ifylld `docs/git-logg.md`.
-
 ## Inlämning
 
 **Deadline: imorgon klockan 09.00.** Allt lämnas in i Microsoft Forms. Du behöver inte redovisa något muntligt.
@@ -139,8 +91,7 @@ Efter övningen jobbar du vidare i `mitt-projekt`, samma repo som i modul 4. Öv
 I formuläret fyller du i:
 
 1. Länk till din fork av det här repot.
-2. Länk till ditt `mitt-projekt`.
-3. Reflektion: Vad är en merge-konflikt, varför uppstår den, och varför är det okej att den uppstår? Beskriv hur du löste din egen konflikt, steg för steg.
+2. Reflektion: Vad är en merge-konflikt, varför uppstår den, och varför är det okej att den uppstår? Beskriv hur du löste din egen konflikt, steg för steg.
 
 ## Vill du mer? (frivilligt)
 
