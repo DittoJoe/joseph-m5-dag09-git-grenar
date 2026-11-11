@@ -1,6 +1,6 @@
 # Dag 9 · Git: grenar, merge och konflikter
 
-*Modul 5, UI/UX & Frontendutveckling (JavaScript), Lexicon IT-Proffs*
+*Modul 5, UI/UX & Frontendutveckling (TypeScript), Lexicon IT-Proffs*
 
 ## Vad du ska göra idag
 
@@ -13,7 +13,7 @@ Hittills har du jobbat på en enda gren och bara gått framåt. I verkligheten j
 ## Så arbetar du (samma som alltid)
 
 1. **Forka** dagens repo på GitHub (*Fork → Create fork*).
-2. **Klona din fork:** *Code → HTTPS → kopiera adressen*. I terminalen (Ctrl+ö i VS Code): `git clone <adressen>`. Öppna den nya mappen i VS Code och starta *Live Server*.
+2. **Klona din fork:** *Code → HTTPS → kopiera adressen*. I terminalen (Ctrl+ö i VS Code): `git clone <adressen>`. Öppna den nya mappen i VS Code.
 3. **Gör uppgiften.** Spara och kontrollera i webbläsaren och Console (F12) efter varje steg. Gör en commit efter varje avslutat steg: `git add .` och `git commit -m "Beskriv vad du gjorde"`.
 4. **Skicka upp** när du är klar: `git push`.
 5. **Lämna in i Microsoft Forms.**
@@ -21,6 +21,8 @@ Hittills har du jobbat på en enda gren och bara gått framåt. I verkligheten j
 Den här dagen jobbar du med grenar. Du pushar fler grenar än `main`, och du öppnar en pull request. Stegen nedan visar exakt hur.
 
 Fastnar du: skriv ner exakt var och vad du försökt (och vilket felmeddelande du fick), och ta det först i nästa handledda pass.
+
+> Idag behövs ingen `npm install`: repot innehåller bara textfiler. I Steg 8 (`.gitignore`) ser du varför `node_modules/` inte ska med i Git. Samma sak gäller dina övriga repon i modulen, där `.gitignore` redan är ifylld.
 
 ## Uppgiften steg för steg
 
