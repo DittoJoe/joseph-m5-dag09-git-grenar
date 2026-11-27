@@ -49,7 +49,7 @@ Jag valde de längre öppettider för att kunna vara mer precis sen
 
 ## 4. Ångra
 Vad är skillnaden mellan `git restore`, `git revert` och `git reset`? Vilken är säkrast när ändringen redan är pushad?
-
+git revert, då går vi tillbaka till en version som har redan granskats
 
 ## 5. Pull request
 Länk till din pull request (på ditt eget repo):
