@@ -25,20 +25,27 @@ Klistra in `git log --oneline --graph --all` efter merge:
 
 Fråga: Vad är skillnaden mellan en *fast-forward*-merge och en merge som skapar en egen merge-commit? Svara med egna ord:
 
-En fast-forward merge är synkroniserad med det som finns på main branchen
+En fast-forward händer när den finns ingen konflikt
 
 ## 3. Konflikten
 Klistra in filen med konfliktmarkörerna, precis som den såg ut innan du löste den:
 
-```
-(klistra in)
-```
+# Öppettider
+
+Vardagar: 07–18
+<<<<<<< HEAD
+Helger: 10–17
+=======
+Helger: 09–18
+>>>>>>> oppettider-sommar
+Röda dagar: stängt
+
 
 Fråga: Vad betyder `<<<<<<< HEAD`, `=======` och `>>>>>>> grennamn`?
-
+HEAD visar ändringen som finns där du är nu, medans grennamn visar ändringen från en annan gren
 
 Hur löste du den, och varför blev det så?
-
+Jag valde de längre öppettider för att kunna vara mer precis sen
 
 ## 4. Ångra
 Vad är skillnaden mellan `git restore`, `git revert` och `git reset`? Vilken är säkrast när ändringen redan är pushad?
