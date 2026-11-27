@@ -13,12 +13,19 @@ Skriv ut `git log --oneline --graph --all` direkt efter att du klonat. Klistra i
 ## 2. Merge utan konflikt
 Klistra in `git log --oneline --graph --all` efter merge:
 
-```
-(klistra in)
-```
+*   5d5f1b4 (HEAD -> main) merge without conflict
+|\
+| * 2efc908 (meny-nyheter) Lägg till Vaniljbulle på menyn
+* | 1bd25c5 Lägg till telefonnummer
+|/
+* 5a5841d (upstream/main, origin/main, origin/HEAD) Modu>
+* 3804533 Add files via upload
+* f7a13a4 Add files via upload
+* c9a0075 Initial commit
 
 Fråga: Vad är skillnaden mellan en *fast-forward*-merge och en merge som skapar en egen merge-commit? Svara med egna ord:
 
+En fast-forward merge är synkroniserad med det som finns på main branchen
 
 ## 3. Konflikten
 Klistra in filen med konfliktmarkörerna, precis som den såg ut innan du löste den:
