@@ -4,3 +4,5 @@
 - Bryggkaffe, 32 kr
 - Ostmacka, 59 kr
 - Latte, 45 kr
+- Vaniljbulle, 34 kr
+- Saffranbulle, 39 kr
